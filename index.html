@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פעוטון בית וגן | מודיעין – מסגרת חינוכית לגיל הרך</title>
+  <meta name="description" content="פעוטון בית וגן במודיעין, בניהולה של אילנה מידני. מסגרת חינוכית חמה לגילאי שנה וחצי עד 3, עם רישיון הפעלה של משרד החינוך, צוות ותיק ובישול טרי במקום. הנביאים 4, מודיעין.">
+  <meta name="theme-color" content="#7cc7ef">
+  <meta property="og:title" content="פעוטון בית וגן – מסגרת חינוכית לגיל הרך">
+  <meta property="og:description" content="גילאי שנה וחצי עד 3 · 3 קבוצות גיל · רישיון משרד החינוך · בישול טרי במקום · הנביאים 4, מודיעין">
+  <meta property="og:image" content="assets/img/banner.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&family=Varela+Round&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body text-navy bg-white antialiased">
+
+  <!-- ===== Header ===== -->
+  <header id="top-nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16 md:h-20">
+      <a href="#hero" class="flex items-center gap-2 group" aria-label="פעוטון בית וגן – לראש העמוד">
+        <img src="assets/img/icon-192.png" alt="" class="w-10 h-10 md:w-12 md:h-12 rounded-2xl shadow-md ring-2 ring-white group-hover:rotate-6 transition">
+        <span class="leading-tight">
+          <span class="block text-xs text-sky-900/70">פעוטון</span>
+          <span class="block font-display font-extrabold text-xl md:text-2xl text-pinky-500 -mt-1">בית וגן</span>
+        </span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-1 font-display font-medium">
+        <li><a class="nav-link" href="#about">הגן שלנו</a></li>
+        <li><a class="nav-link" href="#groups">קבוצות הגיל</a></li>
+        <li><a class="nav-link" href="#manager">המנהלת</a></li>
+        <li><a class="nav-link" href="#gallery">גלריה</a></li>
+        <li><a class="nav-link" href="#hours">שעות ומיקום</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <a href="tel:0522640423" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 hover:bg-white text-sky-900 font-display font-bold shadow-sm transition" aria-label="התקשרו אלינו">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          <span dir="ltr">052-2640423</span>
+        </a>
+        <a href="#register" class="btn-primary !px-5 !py-2 text-sm md:text-base">להרשמה</a>
+        <button id="menu-btn" class="lg:hidden w-11 h-11 rounded-full bg-white/80 grid place-items-center shadow-sm" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="lg:hidden hidden mx-4 mb-3 rounded-3xl bg-white shadow-xl p-3">
+      <ul class="grid gap-1 font-display font-medium text-lg">
+        <li><a class="mobile-link" href="#about">הגן שלנו</a></li>
+        <li><a class="mobile-link" href="#groups">קבוצות הגיל</a></li>
+        <li><a class="mobile-link" href="#manager">המנהלת</a></li>
+        <li><a class="mobile-link" href="#gallery">גלריה וסרטון</a></li>
+        <li><a class="mobile-link" href="#hours">שעות ומיקום</a></li>
+        <li><a class="mobile-link text-pinky-500" href="#register">טופס הרשמה</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="hero" class="relative overflow-hidden pt-28 md:pt-36 pb-40 md:pb-52 bg-gradient-to-b from-sky-300 via-sky-200 to-sky-50">
+      <!-- clouds -->
+      <div class="cloud cloud-1" aria-hidden="true"></div>
+      <div class="cloud cloud-2" aria-hidden="true"></div>
+      <div class="cloud cloud-3" aria-hidden="true"></div>
+      <!-- sun -->
+      <div class="sun" aria-hidden="true"></div>
+      <!-- butterflies -->
+      <svg class="butterfly b1" viewBox="0 0 64 64" aria-hidden="true"><use href="#butterfly"/></svg>
+      <svg class="butterfly b2" viewBox="0 0 64 64" aria-hidden="true"><use href="#butterfly"/></svg>
+      <svg class="butterfly b3" viewBox="0 0 64 64" aria-hidden="true"><use href="#butterfly"/></svg>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="text-center lg:text-right reveal">
+          <span class="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-4 py-1.5 rounded-full text-sm font-display font-bold text-sky-900 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-grass-500 animate-pulse"></span>
+            ההרשמה לשנת הלימודים פתוחה
+          </span>
+          <p class="mt-5 font-display font-bold text-2xl md:text-3xl text-sky-900">פעוטון</p>
+          <h1 class="font-display font-extrabold text-7xl md:text-8xl lg:text-9xl leading-[0.9] text-pinky-500 hero-title">
+            בית <span class="text-pinky-500">וגן</span>
+          </h1>
+          <p class="mt-6 text-xl md:text-2xl text-sky-900 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            מסגרת חינוכית חמה ואוהבת לגיל הרך, בניהולה של <strong class="font-display">אילנה מידני</strong> –
+            עם 32 שנות ניסיון בחינוך.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
+            <a href="#register" class="btn-primary text-lg">
+              רוצים לשריין מקום?
+              <svg class="w-5 h-5 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#gallery" class="btn-secondary text-lg">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              לסיור בגן
+            </a>
+          </div>
+          <ul class="mt-8 flex flex-wrap gap-2 justify-center lg:justify-start text-sm font-display font-medium">
+            <li class="chip">👶 גילאי שנה וחצי – 3</li>
+            <li class="chip">📜 רישיון משרד החינוך</li>
+            <li class="chip">🥘 בישול טרי במקום</li>
+          </ul>
+        </div>
+
+        <div class="relative reveal" style="--d:.15s">
+          <div class="hero-card">
+            <img src="assets/img/logo.jpg" alt="הלוגו של פעוטון בית וגן – בית ציורי עם גג אדום ופרפרים" class="w-full h-auto rounded-[1.75rem]" width="482" height="262">
+          </div>
+          <div class="floating-badge -bottom-6 right-4 md:right-8">
+            <span class="text-3xl">🌟</span>
+            <span>
+              <span class="block font-display font-extrabold text-2xl text-pinky-500 leading-none">32</span>
+              <span class="block text-xs text-sky-900">שנות ניסיון</span>
+            </span>
+          </div>
+          <div class="floating-badge -top-5 left-2 md:left-6" style="animation-delay:-2s">
+            <span class="text-3xl">🦋</span>
+            <span>
+              <span class="block font-display font-extrabold text-2xl text-sky-600 leading-none">28</span>
+              <span class="block text-xs text-sky-900">ילדים בלבד</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- hills -->
+      <svg class="absolute bottom-0 inset-x-0 w-full h-40 md:h-56" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 120 C 240 40 420 60 640 110 S 1100 60 1440 100 V220 H0Z" fill="#a6e06b"/>
+        <path d="M0 160 C 300 90 520 130 760 150 S 1200 110 1440 140 V220 H0Z" fill="#85cf3f"/>
+        <path d="M0 200 C 360 170 720 190 1080 185 S 1340 190 1440 195 V220 H0Z" fill="#ffffff"/>
+      </svg>
+      <div class="bushes" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="relative -mt-14 md:-mt-20 z-20 px-4">
+      <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+        <div class="stat reveal"><span class="stat-num text-pinky-500" data-count="28">0</span><span class="stat-label">ילדים בכל הגן</span></div>
+        <div class="stat reveal" style="--d:.08s"><span class="stat-num text-sky-600" data-count="3">0</span><span class="stat-label">קבוצות גיל</span></div>
+        <div class="stat reveal" style="--d:.16s"><span class="stat-num text-grass-600" data-count="32">0</span><span class="stat-label">שנות ניסיון בחינוך</span></div>
+        <div class="stat reveal" style="--d:.24s"><span class="stat-num text-sun-400" data-count="16">0</span><span class="stat-label">שנים בניהול מעונות</span></div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="py-20 md:py-28 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="section-head reveal">
+          <span class="eyebrow">הגן שלנו</span>
+          <h2 class="section-title">בית שני, חם ובטוח 🏡</h2>
+          <p class="section-sub">
+            פעוטון "בית וגן" הוא מסגרת חינוכית לגיל הרך הפועלת במבנה עירייה ברחוב הנביאים 4 במודיעין.
+            קבוצות קטנות, צוות ותיק ואוהב, ובישול טרי בכל יום – כדי שכל פעוט ירגיש בבית.
+          </p>
+        </div>
+
+        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <article class="feature reveal">
+            <div class="feature-icon bg-sky-100">📜</div>
+            <h3>רישיון הפעלה של משרד החינוך</h3>
+            <p>הגן פועל לפי חוק הפיקוח על מעונות יום, עם רישיון הפעלה למעון יום מטעם משרד החינוך.</p>
+          </article>
+          <article class="feature reveal" style="--d:.08s">
+            <div class="feature-icon bg-grass-100">🌱</div>
+            <h3>תוכנית "פסיעות"</h3>
+            <p>הגן משתתף בתוכנית "פסיעות" של עיריית מודיעין ומקבל ליווי והדרכה של יועצת חינוכית.</p>
+          </article>
+          <article class="feature reveal" style="--d:.16s">
+            <div class="feature-icon bg-sun-100">🥘</div>
+            <h3>בישול טרי במקום</h3>
+            <p>טבחית במקום מכינה לילדים ארוחות טריות, ביתיות ומזינות – כל יום מחדש.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon bg-pinky-100">🤗</div>
+            <h3>צוות ותיק ומנוסה</h3>
+            <p>צוות קבוע, מקצועי וחם שמכיר כל ילד וילדה ומלווה אותם באהבה ובסבלנות.</p>
+          </article>
+          <article class="feature reveal" style="--d:.08s">
+            <div class="feature-icon bg-sky-100">👨‍👩‍👧</div>
+            <h3>קבוצות קטנות</h3>
+            <p>28 ילדים בלבד בכל הגן, המחולקים ל-3 קבוצות גיל – יחס אישי לכל פעוט.</p>
+          </article>
+          <article class="feature reveal" style="--d:.16s">
+            <div class="feature-icon bg-grass-100">🌳</div>
+            <h3>חצר ירוקה ומרחבי משחק</h3>
+            <p>חצר מוצלת עם מתקנים, עץ גדול ופינות משחק, וחדרים מאובזרים ומעוצבים לגיל הרך.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Groups ===== -->
+    <section id="groups" class="relative py-20 md:py-28 px-4 bg-gradient-to-b from-grass-100/60 via-white to-white overflow-hidden">
+      <div class="max-w-6xl mx-auto">
+        <div class="section-head reveal">
+          <span class="eyebrow">קבוצות הגיל</span>
+          <h2 class="section-title">3 קבוצות, כל אחת בקצב שלה 🌼</h2>
+          <p class="section-sub">גילאי הרישום: מגיל שנה וחצי (1.6) ועד גיל 3. הגן מחולק לשלוש קבוצות גיל, 28 ילדים בסך הכול.</p>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-3 gap-6">
+          <article class="group-card reveal" style="--c1:#ffe08a;--c2:#fff6d6">
+            <div class="group-flower">🌼</div>
+            <h3>קבוצת הנרקיסים</h3>
+            <p class="group-age">גילאי 1.6 – 2</p>
+            <div class="group-count"><strong>8</strong> ילדים בקבוצה</div>
+            <div class="group-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p class="group-desc">הקבוצה הצעירה שלנו – סביבה רגועה ועוטפת לצעדים הראשונים במסגרת.</p>
+          </article>
+
+          <article class="group-card reveal" style="--d:.1s;--c1:#ffb3d6;--c2:#fff0f7">
+            <div class="group-flower">🌸</div>
+            <h3>קבוצת הסביונים</h3>
+            <p class="group-age">גילאי 2 – 3</p>
+            <div class="group-count"><strong>10</strong> ילדים בקבוצה</div>
+            <div class="group-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p class="group-desc">משחק, יצירה, שפה וחברות – למידה דרך חוויה בקבוצה קטנה ואינטימית.</p>
+          </article>
+
+          <article class="group-card reveal" style="--d:.2s;--c1:#c9b6ff;--c2:#f4f0ff">
+            <div class="group-flower">🌺</div>
+            <h3>קבוצת הסחלבים</h3>
+            <p class="group-age">גילאי 2 – 3</p>
+            <div class="group-count"><strong>10</strong> ילדים בקבוצה</div>
+            <div class="group-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p class="group-desc">עצמאות, סקרנות וביטחון – הכנה רכה ושמחה למעבר לגן הבא.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Manager ===== -->
+    <section id="manager" class="overflow-x-clip py-20 md:py-28 px-4">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-10 items-center">
+        <div class="lg:col-span-2 reveal">
+          <div class="manager-photo">
+            <!-- להחלפה בתמונה של אילנה: שמרו קובץ בשם assets/img/ilana.jpg ושנו את ה-src -->
+            <img class="manager-img" src="assets/img/gallery-11.jpg" alt="חדר המשחקים בפעוטון בית וגן" loading="lazy">
+            <div class="manager-ribbon">
+              <span class="block font-display font-extrabold text-2xl">אילנה מידני</span>
+              <span class="block text-sm opacity-90">מנהלת הגן · Elana Maidani</span>
+            </div>
+            <span class="manager-sticker s1">📜</span>
+            <span class="manager-sticker s2">✨</span>
+            <span class="manager-sticker s3">🦋</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 reveal" style="--d:.1s">
+          <span class="eyebrow">נעים להכיר</span>
+          <h2 class="section-title !text-right">שלום, אני אילנה 👋</h2>
+          <p class="mt-5 text-lg leading-relaxed text-navy/80">
+            אני מנהלת פעוטון "בית וגן", ומאמינה שהשנים הראשונות הן הבסיס לכל מה שיבוא אחריהן.
+            בגן שלנו כל ילד וילדה מקבלים חום, ביטחון ויחס אישי – ואתם, ההורים, מקבלים שקט נפשי.
+          </p>
+
+          <ul class="mt-8 grid sm:grid-cols-2 gap-4">
+            <li class="cred"><span class="cred-icon">🎓</span><span><strong>בוגרת אוניברסיטת בר-אילן</strong><br>בחינוך</span></li>
+            <li class="cred"><span class="cred-icon">🏅</span><span><strong>הכשרה לניהול מעונות יום</strong><br>של משרד התמ"ת</span></li>
+            <li class="cred"><span class="cred-icon">⏳</span><span><strong>32 שנות ניסיון</strong><br>בחינוך וניהול מסגרות</span></li>
+            <li class="cred"><span class="cred-icon">🏫</span><span><strong>16 שנה בניהול מעונות יום</strong><br>של רשת "אמונה"</span></li>
+          </ul>
+
+          <div class="mt-8 flex items-center gap-3 p-4 rounded-3xl bg-sun-100 border-2 border-dashed border-sun-300">
+            <span class="text-3xl">🌟</span>
+            <p class="font-display font-medium text-lg">שפע המלצות מהורים מרוצים – נשמח לחבר אתכם להורים שלנו!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section id="gallery" class="py-20 md:py-28 px-4 bg-sky-50 relative overflow-hidden">
+      <div class="max-w-6xl mx-auto">
+        <div class="section-head reveal">
+          <span class="eyebrow">גלריה</span>
+          <h2 class="section-title">בואו לסיור בגן 🎬</h2>
+          <p class="section-sub">הציצו בחדרים, בפינות המשחק ובחצר הירוקה שלנו.</p>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-5 gap-6 items-start">
+          <div class="lg:col-span-2 reveal">
+            <div class="video-frame">
+              <video id="tour-video" controls playsinline preload="metadata" poster="assets/img/gallery-01.jpg" class="w-full h-full object-cover bg-black">
+                <source src="assets/video/tour.mp4" type="video/mp4">
+                הדפדפן שלכם לא תומך בניגון וידאו.
+              </video>
+            </div>
+            <p class="mt-3 text-center text-sm text-navy/60">סרטון סיור בגן · כ-2 דקות</p>
+          </div>
+
+          <div class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-3 reveal" style="--d:.1s" id="gallery-grid">
+            <button class="g-item" data-index="0"><img src="assets/img/gallery-01.jpg" alt="פינת משחק עם שטיח סגול וקשת צבעונית" loading="lazy"></button>
+            <button class="g-item" data-index="1"><img src="assets/img/gallery-02.jpg" alt="פינה רכה עם ספה ומדפי משחקים" loading="lazy"></button>
+            <button class="g-item" data-index="2"><img src="assets/img/gallery-03.jpg" alt="קיר פעילות ומשחקי התפתחות" loading="lazy"></button>
+            <button class="g-item" data-index="3"><img src="assets/img/gallery-04.jpg" alt="פינת ספרייה וקיר משחקי מגע" loading="lazy"></button>
+            <button class="g-item" data-index="4"><img src="assets/img/gallery-05.jpg" alt="מתקני משחק בחצר הירוקה" loading="lazy"></button>
+            <button class="g-item" data-index="5"><img src="assets/img/gallery-06.jpg" alt="מכונית משחק בחצר" loading="lazy"></button>
+            <button class="g-item" data-index="6"><img src="assets/img/gallery-07.jpg" alt="חצר מוצלת עם מגלשה" loading="lazy"></button>
+            <button class="g-item" data-index="7"><img src="assets/img/gallery-08.jpg" alt="עץ גדול ושולחנות בחצר" loading="lazy"></button>
+            <button class="g-item" data-index="8"><img src="assets/img/gallery-09.jpg" alt="מרחב הגן הפנימי" loading="lazy"></button>
+            <button class="g-item hidden sm:block" data-index="9"><img src="assets/img/gallery-10.jpg" alt="שולחנות וכיסאות לפעילות" loading="lazy"></button>
+            <button class="g-item hidden sm:block" data-index="10"><img src="assets/img/gallery-11.jpg" alt="חדר משחקים ופינות יצירה" loading="lazy"></button>
+            <button class="g-item hidden sm:block" data-index="11"><img src="assets/img/gallery-12.jpg" alt="הכניסה לגן" loading="lazy"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Hours & location ===== -->
+    <section id="hours" class="py-20 md:py-28 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="section-head reveal">
+          <span class="eyebrow">שעות ומיקום</span>
+          <h2 class="section-title">מתי ואיפה? 🕖</h2>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-2 gap-6">
+          <div class="grid gap-5 reveal">
+            <div class="info-card">
+              <div class="info-icon bg-sky-100">☀️</div>
+              <div>
+                <h3>ימים א' – ה'</h3>
+                <p class="info-big" dir="ltr">7:30 – 16:00</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon bg-pinky-100">🗓️</div>
+              <div>
+                <h3>ימי שישי</h3>
+                <p class="info-big"><span dir="ltr">7:45 – 12:00</span></p>
+                <p class="text-navy/60">לסירוגין</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon bg-grass-100">📍</div>
+              <div>
+                <h3>כתובת</h3>
+                <p class="info-big">הנביאים 4, מודיעין</p>
+                <p class="text-navy/60">הגן נמצא במבנה עירייה</p>
+                <a class="link-arrow mt-2" href="https://www.google.com/maps/search/?api=1&query=%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D+4+%D7%9E%D7%95%D7%93%D7%99%D7%A2%D7%99%D7%9F" target="_blank" rel="noopener">ניווט בגוגל מפות</a>
+                <a class="link-arrow mt-2 ms-4" href="https://waze.com/ul?q=%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D%204%20%D7%9E%D7%95%D7%93%D7%99%D7%A2%D7%99%D7%9F&navigate=yes" target="_blank" rel="noopener">ניווט ב-Waze</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-frame reveal" style="--d:.1s">
+            <iframe title="מפה – פעוטון בית וגן, הנביאים 4 מודיעין"
+              src="https://maps.google.com/maps?q=%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D%204%20%D7%9E%D7%95%D7%93%D7%99%D7%A2%D7%99%D7%9F&z=16&output=embed&hl=he"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Register ===== -->
+    <section id="register" class="relative py-20 md:py-28 px-4 overflow-hidden bg-gradient-to-br from-pinky-50 via-white to-sky-100">
+      <svg class="butterfly b4" viewBox="0 0 64 64" aria-hidden="true"><use href="#butterfly"/></svg>
+      <div class="relative max-w-5xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+        <div class="lg:col-span-2 reveal">
+          <span class="eyebrow">הרשמה</span>
+          <h2 class="section-title !text-right">שריינו מקום לילד/ה שלכם 💌</h2>
+          <p class="mt-4 text-lg text-navy/80 leading-relaxed">
+            מלאו את הפרטים ואילנה תחזור אליכם בהקדם לתיאום ביקור בגן ולשיחת היכרות.
+            מספר המקומות בכל קבוצה מוגבל.
+          </p>
+          <div class="mt-8 grid gap-3">
+            <a href="tel:0522640423" class="contact-pill">
+              <span class="contact-ico bg-sky-100">☎️</span>
+              <span><span class="block text-sm text-navy/60">התקשרו</span><span class="font-display font-bold text-lg" dir="ltr">052-2640423</span></span>
+            </a>
+            <a href="https://wa.me/972522640423?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%9C%D7%A0%D7%94%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%A4%D7%A2%D7%95%D7%98%D7%95%D7%9F%20%D7%91%D7%99%D7%AA%20%D7%95%D7%92%D7%9F" target="_blank" rel="noopener" class="contact-pill">
+              <span class="contact-ico bg-grass-100">💬</span>
+              <span><span class="block text-sm text-navy/60">כתבו לנו</span><span class="font-display font-bold text-lg">בוואטסאפ</span></span>
+            </a>
+            <a href="https://www.facebook.com/search/top?q=%D7%A4%D7%A2%D7%95%D7%98%D7%95%D7%9F%20%D7%91%D7%99%D7%AA%20%D7%95%D7%92%D7%9F" target="_blank" rel="noopener" class="contact-pill">
+              <span class="contact-ico bg-sky-100">👍</span>
+              <span><span class="block text-sm text-navy/60">מצאו אותנו בפייסבוק</span><span class="font-display font-bold text-lg">@פעוטון בית וגן</span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 reveal" style="--d:.1s">
+          <form id="lead-form" class="form-card" novalidate>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="field">
+                <label for="parentName">שם ההורה <span class="req">*</span></label>
+                <input id="parentName" name="parentName" type="text" autocomplete="name" required placeholder="שם מלא">
+                <p class="err">נא למלא שם</p>
+              </div>
+              <div class="field">
+                <label for="phone">טלפון <span class="req">*</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="050-0000000" dir="ltr" class="text-right">
+                <p class="err">נא להזין מספר טלפון תקין</p>
+              </div>
+              <div class="field sm:col-span-2">
+                <label for="email">אימייל <span class="opt">(לא חובה)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" dir="ltr" class="text-right">
+                <p class="err">כתובת האימייל לא תקינה</p>
+              </div>
+              <div class="field">
+                <label for="childName">שם הילד/ה <span class="req">*</span></label>
+                <input id="childName" name="childName" type="text" required placeholder="שם פרטי">
+                <p class="err">נא למלא את שם הילד/ה</p>
+              </div>
+              <div class="field">
+                <label for="birthDate">תאריך לידה <span class="req">*</span></label>
+                <input id="birthDate" name="birthDate" type="date" required>
+                <p class="err">נא לבחור תאריך לידה</p>
+              </div>
+              <div id="age-hint" class="sm:col-span-2 hidden age-hint" aria-live="polite"></div>
+              <div class="field">
+                <label for="group">קבוצה מבוקשת</label>
+                <select id="group" name="group">
+                  <option value="">לא בטוח/ה – נשמח להמלצה</option>
+                  <option value="נרקיסים (1.6-2)">הנרקיסים (1.6 – 2)</option>
+                  <option value="סביונים (2-3)">הסביונים (2 – 3)</option>
+                  <option value="סחלבים (2-3)">הסחלבים (2 – 3)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="startDate">מועד כניסה מבוקש</label>
+                <select id="startDate" name="startDate">
+                  <option value="כמה שיותר מהר">כמה שיותר מהר</option>
+                  <option value="ספטמבר הקרוב">ספטמבר הקרוב</option>
+                  <option value="במהלך השנה">במהלך השנה</option>
+                  <option value="רק בודקים אפשרויות">רק בודקים אפשרויות</option>
+                </select>
+              </div>
+              <div class="field sm:col-span-2">
+                <label for="notes">משהו שחשוב לכם שנדע?</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="שאלות, בקשות, מועד נוח לחזור אליכם..."></textarea>
+              </div>
+              <label class="sm:col-span-2 flex items-start gap-3 cursor-pointer select-none">
+                <input id="consent" name="consent" type="checkbox" required class="mt-1 w-5 h-5 accent-pinky-500">
+                <span class="text-sm text-navy/70">אני מאשר/ת לפעוטון בית וגן ליצור איתי קשר בנוגע להרשמה. <span class="req">*</span></span>
+              </label>
+              <!-- honeypot against bots -->
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+            </div>
+
+            <button type="submit" class="btn-primary w-full mt-6 text-lg !py-4" id="submit-btn">
+              <span class="btn-label">שליחת פרטים</span>
+              <span class="btn-spinner hidden" aria-hidden="true"></span>
+            </button>
+            <p id="form-error" class="hidden mt-3 text-center text-pinky-600 font-medium" role="alert"></p>
+            <p class="mt-3 text-center text-xs text-navy/50">הפרטים משמשים אך ורק לחזרה אליכם בנושא ההרשמה.</p>
+          </form>
+
+          <div id="form-success" class="form-card hidden text-center" role="status" tabindex="-1">
+            <div class="text-6xl success-pop">🎉</div>
+            <h3 class="mt-4 font-display font-extrabold text-3xl text-pinky-500">תודה רבה!</h3>
+            <p class="mt-3 text-lg text-navy/80" id="success-text">הפרטים התקבלו. אילנה תחזור אליכם בהקדם.</p>
+            <a id="success-wa" href="#" target="_blank" rel="noopener" class="btn-secondary mt-6 hidden">שליחת הפרטים גם בוואטסאפ</a>
+            <button type="button" id="form-again" class="block mx-auto mt-5 text-sky-600 underline underline-offset-4">רישום ילד/ה נוסף/ת</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="relative bg-navy text-white pt-20 pb-8 px-4 overflow-hidden">
+    <svg class="absolute top-0 inset-x-0 w-full h-12 -translate-y-px" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0 H1440 V20 C 1080 60 720 0 360 30 S 60 30 0 20Z" fill="#e0f2fe"/>
+    </svg>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 relative">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/img/icon-192.png" alt="" class="w-14 h-14 rounded-2xl ring-2 ring-white/30">
+          <div>
+            <p class="text-sm text-white/70">פעוטון</p>
+            <p class="font-display font-extrabold text-3xl text-pinky-300 -mt-1">בית וגן</p>
+          </div>
+        </div>
+        <p class="mt-4 text-white/70 leading-relaxed">מסגרת חינוכית לגיל הרך בניהולה של אילנה מידני. גילאי שנה וחצי עד 3.</p>
+      </div>
+      <div>
+        <h3 class="font-display font-bold text-lg mb-3">יצירת קשר</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>☎️ <a href="tel:0522640423" class="hover:text-pinky-300" dir="ltr">052-2640423</a> – אילנה מידני</li>
+          <li>📍 הנביאים 4, מודיעין (מבנה עירייה)</li>
+          <li>👍 <a href="https://www.facebook.com/search/top?q=%D7%A4%D7%A2%D7%95%D7%98%D7%95%D7%9F%20%D7%91%D7%99%D7%AA%20%D7%95%D7%92%D7%9F" target="_blank" rel="noopener" class="hover:text-pinky-300">פעוטון בית וגן בפייסבוק</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-bold text-lg mb-3">שעות פעילות</h3>
+        <ul class="space-y-2 text-white/80">
+          <li>א' – ה': <span dir="ltr">7:30 – 16:00</span></li>
+          <li>שישי (לסירוגין): <span dir="ltr">7:45 – 12:00</span></li>
+        </ul>
+        <a href="#register" class="btn-primary mt-5 !py-2.5">להרשמה לגן</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-white/10 text-center text-sm text-white/50">
+      © <span id="year">2026</span> פעוטון בית וגן · כל הזכויות שמורות
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/972522640423?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%9C%D7%A0%D7%94%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%A4%D7%A2%D7%95%D7%98%D7%95%D7%9F%20%D7%91%D7%99%D7%AA%20%D7%95%D7%92%D7%9F" target="_blank" rel="noopener" class="wa-float" aria-label="שליחת הודעה בוואטסאפ">
+    <svg viewBox="0 0 32 32" class="w-8 h-8" fill="currentColor"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.1l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.3 3.4 14.7 14.7 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="תצוגת תמונה">
+    <button class="lb-close" aria-label="סגירה">✕</button>
+    <button class="lb-nav lb-prev" aria-label="התמונה הקודמת">›</button>
+    <img id="lb-img" src="" alt="">
+    <button class="lb-nav lb-next" aria-label="התמונה הבאה">‹</button>
+    <p id="lb-caption" class="lb-caption"></p>
+  </div>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="bwing" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#7dd3fc"/>
+        <stop offset="1" stop-color="#2563eb"/>
+      </linearGradient>
+      <symbol id="butterfly" viewBox="0 0 64 64">
+        <g class="wing-l"><path d="M32 30 C 20 6, 2 8, 6 24 C 8 32, 20 34, 32 32Z" fill="url(#bwing)"/><path d="M32 33 C 18 36, 8 48, 16 54 C 24 58, 30 46, 32 36Z" fill="url(#bwing)" opacity=".85"/></g>
+        <g class="wing-r"><path d="M32 30 C 44 6, 62 8, 58 24 C 56 32, 44 34, 32 32Z" fill="url(#bwing)"/><path d="M32 33 C 46 36, 56 48, 48 54 C 40 58, 34 46, 32 36Z" fill="url(#bwing)" opacity=".85"/></g>
+        <rect x="30.5" y="22" width="3" height="26" rx="1.5" fill="#1f2a5c"/>
+        <path d="M31 23 C 28 16, 26 14, 24 13 M33 23 C 36 16, 38 14, 40 13" stroke="#1f2a5c" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
